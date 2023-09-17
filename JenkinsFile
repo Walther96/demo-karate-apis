@@ -2,7 +2,7 @@
 pipeline {
     agent any
     parameters {
-        string(defaultValue: '@regression', name: 'TAG')
+        string(defaultValue: 'regression', name: 'TAG')
     }
     stages {
         stage('Checkout Code') {
@@ -16,6 +16,7 @@ pipeline {
         stage('Run Account Demo Tests') {
             steps {
                 println('**** Trigger Tests ****')
+                println('mvn clean test -Dkarate.options=--tags @'${TAG})
                 bat "mvn clean test -Dkarate.options=--tags @${TAG}"
             }
         }
