@@ -15,7 +15,7 @@ This is my personal portfolio about an API automation project using Karate DSL.
 
  **Command to run *"Restful-booker API"* tests:**
 
-    mvn clean test "-Dkarate.options=--tags @booker"
+    mvn clean test "-Dkarate.options=--tags @booking"
 
 **Command to run *"Go REST API"* tests:**
   
