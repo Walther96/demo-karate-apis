@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Run Account Demo Tests') {
             steps {
-                println('**** Trigger' ${TAG} 'Tests ****')
+                println('**** Trigger Tests ****')
                 sh "mvn clean test -Dkarate.options=--tags @${TAG}"
             }
         }
