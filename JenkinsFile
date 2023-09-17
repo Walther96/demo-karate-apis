@@ -16,7 +16,7 @@ pipeline {
         stage('Run Account Demo Tests') {
             steps {
                 println('**** Trigger Tests ****')
-                bat 'mvn clean test'+'"'+'-Dkarate.options=--tags @'+'"'+${TAG}+'"'
+                bat "mvn clean test \"-Dkarate.options=--tags @${TAG}\""
             }
         }
         stage('Generate Report') {
