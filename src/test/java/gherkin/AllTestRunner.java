@@ -6,14 +6,14 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class TestRunner {
+public class AllTestRunner {
 
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:gherkin")
                 .outputCucumberJson(true)
                 .outputJunitXml(true)
-                .parallel(2);
+                .parallel(1);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 
