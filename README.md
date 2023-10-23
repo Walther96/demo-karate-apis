@@ -1,4 +1,4 @@
-# Automation Project with Karate DSL 
+# Personal Portfolio - WC
 
 This is my personal portfolio about an API automation project using Karate DSL.
 
