@@ -7,9 +7,9 @@ Feature: API Gorest
     Given url baseGorest + "<resource>"
     When method get
     Then status 200
-     * print response[1].id
+      * karate.log(response[1].id)
 
-      Examples:
+     Examples:
         | resource |
         | users    |
         | posts    |
@@ -27,7 +27,7 @@ Feature: API Gorest
     And method get
     Then status 200
     And match response.id == userId
-      * print response
+      * karate.log(response)
 
       Examples:
         | resource |
@@ -54,7 +54,7 @@ Feature: API Gorest
     Then status 201
     And match response.name == "#(name)"
     And match response.email == "#(email)"
-      * print response
+      * karate.log(response)
 
       Examples:
         | resource |
@@ -80,7 +80,7 @@ Feature: API Gorest
     Then status 200
     And match response.email == "#(email)"
     And match response.gender contains "<gender>"
-      * print response
+      * karate.log(response)
 
       Examples:
         | resource | gender |

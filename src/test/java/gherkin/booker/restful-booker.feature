@@ -14,7 +14,7 @@ Feature: API restful-booker
       """
       When method post
       Then status 200
-        * print response
+        * karate.log(response)
 
 
     @listBooking
@@ -23,7 +23,7 @@ Feature: API restful-booker
       When method get
       Then status 200
 
-        * print response[1]
+      * karate.log(response[1])
 
 
     @getBookingByParams
@@ -34,7 +34,7 @@ Feature: API restful-booker
       When method get
       Then status 200
 
-      * print response
+      * karate.log(response)
 
 
     @detailBooking
@@ -44,7 +44,7 @@ Feature: API restful-booker
       When method get
       Then status <responseCode>
 
-        * print response
+        * karate.log(response)
 
         Examples:
         | id   | responseCode |
@@ -78,7 +78,7 @@ Feature: API restful-booker
     And match response.booking.bookingdates.checkout == "<dateCheckout>"
     And match response.booking.additionalneeds == "<additionalneeds>"
 
-      * print response
+      * karate.log(response)
 
       Examples:
         | name    | dateCheckout | additionalneeds | responseCode |
@@ -92,4 +92,4 @@ Feature: API restful-booker
     When method get
     Then status 201
 
-      * print response
+      * karate.log(response)

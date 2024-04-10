@@ -14,7 +14,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.intuit" level="DEBUG"/>
+    <logger name="com.intuit" level="INFO"/>
     <logger name="karate.org.thymeleaf" level="OFF"/>
 
     <root level="warn">
