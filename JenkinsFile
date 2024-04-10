@@ -2,7 +2,7 @@
 pipeline {
     agent any
     parameters {
-        string(defaultValue: 'AllTestRunner', name: 'TAG')
+        string(defaultValue: 'AllRunner', name: 'TAG')
     }
     stages {
         stage('Checkout Code') {
@@ -29,7 +29,7 @@ pipeline {
                                 keepAll: true,
                                 reportDir: 'target/karate-reports',
                                 reportFiles: 'karate-summary.html',
-                                reportName: 'API Testing',
+                                reportName: 'API Testing - Portfolio Walther Choque',
                                 reportTitles: 'API with Karate DSL'
                         ]
                 )
