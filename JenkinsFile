@@ -29,7 +29,7 @@ pipeline {
                                 keepAll: true,
                                 reportDir: 'target/karate-reports',
                                 reportFiles: 'karate-summary.html',
-                                reportName: 'API Testing - Portfolio Walther Choque',
+                                reportName: 'Report View',
                                 reportTitles: 'API with Karate DSL'
                         ]
                 )
