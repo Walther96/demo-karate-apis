@@ -23,7 +23,10 @@ This is my personal portfolio about an API automation project using Karate DSL.
 
 **Command to run *"Read from CSV"* test:**
 
-    mvn test -Dtest="CsvRunner"
+    mvn test -Dtest="ReqresRunner"
 
+**Command to run *"GraphQL API"* test:**
+
+    mvn test -Dtest="GraphQLRunner"
 
 

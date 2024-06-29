@@ -1,0 +1,6 @@
+query MyQuery {
+    pokemon_v2_ability(limit: 5) {
+        name
+        id
+    }
+}

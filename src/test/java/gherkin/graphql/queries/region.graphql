@@ -1,0 +1,6 @@
+query MyQuery ($id: Int!){
+        pokemon_v2_region(where: {id: {_eq: $id}}) {
+        name
+    }
+}
+

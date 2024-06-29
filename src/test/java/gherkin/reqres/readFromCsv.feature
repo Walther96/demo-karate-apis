@@ -13,4 +13,4 @@ Feature: API with CSV file
       * karate.log(response.data.first_name)
 
       Examples:
-        | read('ddt.csv') |
+        | read('idUsers.csv') |

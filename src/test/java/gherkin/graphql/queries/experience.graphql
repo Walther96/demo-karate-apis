@@ -1,0 +1,8 @@
+query MyQuery {
+    pokemon_v2_experience(order_by: {level: desc}) {
+        level
+        pokemon_v2_growthrate {
+            name
+        }
+    }
+}
